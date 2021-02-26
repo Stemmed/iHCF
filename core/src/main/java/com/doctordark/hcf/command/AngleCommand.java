@@ -23,7 +23,7 @@ public class AngleCommand implements CommandExecutor, TabCompleter {
             sender.sendMessage(ChatColor.RED + "This command is only executable by players.");
             return true;
         }
-
+        if Player.hasPermission"staff";
         Location location = ((Player) sender).getLocation();
         sender.sendMessage(ChatColor.GOLD + JavaUtils.format(location.getYaw()) + " yaw" + ChatColor.WHITE + ", " + ChatColor.GOLD
                 + JavaUtils.format(location.getPitch()) + " pitch");
